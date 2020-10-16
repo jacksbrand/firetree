@@ -1,0 +1,31 @@
+{
+  "name": "firetree",
+  "version": "1.0.0",
+  "description": "MERN Firetree ecommerce",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server",
+    "server": "nodemon server/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksbrand/firetree.git"
+  },
+  "author": "JacksBrand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacksbrand/firetree/issues"
+  },
+  "homepage": "https://github.com/jacksbrand/firetree#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.5"
+  }
+}
